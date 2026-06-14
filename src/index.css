@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ink text-white font-sans antialiased overflow-x-hidden;
+  }
+
+  /* Brand-coloured selection */
+  ::selection {
+    @apply bg-orange text-white;
+  }
+}
+
+@layer components {
+  /* Small uppercase orange eyebrow used above section titles */
+  .eyebrow {
+    @apply text-[0.65rem] uppercase tracking-[0.3em] text-orange font-medium;
+  }
+
+  /* Big condensed section title */
+  .title {
+    @apply font-display uppercase leading-[0.95] text-[clamp(2rem,5vw,4rem)];
+  }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
