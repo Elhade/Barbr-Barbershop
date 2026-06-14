@@ -48,7 +48,7 @@ export const HERO = {
   eyebrow: "Marseille — 13001",
   slogan: "Tu Rentres · Tu Boudes · Tu Sors · T'es Frais",
   cta: "Prendre RDV",
-  bg: "/images/frame_01.jpg",
+  bg: "/images/frame_01.webp",
 };
 
 export const ABOUT = {
@@ -61,8 +61,8 @@ export const ABOUT = {
   ],
   slogan: ["Tu rentres,", "tu boudes,", "tu sors", "t'es FRAIS !"],
   images: {
-    front: "/images/frame_12.jpg",
-    back: "/images/frame_16.jpg",
+    front: "/images/frame_12.webp",
+    back: "/images/frame_16.webp",
   },
 };
 
@@ -72,12 +72,12 @@ export const GALLERY = {
   intro:
     "Des détails qui font la différence. Un espace conçu avec soin, une identité visuelle forte, une culture qui se vit autant qu'elle se voit.",
   items: [
-    { src: "/images/frame_05.jpg", alt: "Intérieur salon", span: "tall" },
-    { src: "/images/frame_08.jpg", alt: "Basketball Nike bling" },
-    { src: "/images/frame_11.jpg", alt: "Adidas orange sneakers" },
-    { src: "/images/frame_09.jpg", alt: "Bac de lavage" },
-    { src: "/images/frame_14.jpg", alt: "Art mural noir et blanc", span: "wide" },
-    { src: "/images/frame_22.jpg", alt: "Sneakers display" },
+    { src: "/images/frame_05.webp", alt: "Intérieur salon", span: "tall" },
+    { src: "/images/frame_08.webp", alt: "Basketball Nike bling" },
+    { src: "/images/frame_11.webp", alt: "Adidas orange sneakers" },
+    { src: "/images/frame_09.webp", alt: "Bac de lavage" },
+    { src: "/images/frame_14.webp", alt: "Art mural noir et blanc", span: "wide" },
+    { src: "/images/frame_22.webp", alt: "Sneakers display" },
   ] as GalleryItem[],
 };
 
@@ -95,26 +95,26 @@ export const VIBE = {
       icon: Gamepad2,
       title: "PS5 en salle",
       desc: "L'attente ne l'est plus",
-      img: "/images/frame_18.jpg",
+      img: "/images/frame_18.webp",
     },
     {
       icon: Trophy,
       title: "Babyfoot",
       desc: "Un vrai spot",
-      img: "/images/frame_12.jpg",
+      img: "/images/frame_12.webp",
       objectPosition: "left",
     },
     {
       icon: Footprints,
       title: "Street culture",
       desc: "Chaque détail compte",
-      img: "/images/frame_08.jpg",
+      img: "/images/frame_08.webp",
     },
     {
       icon: Scissors,
       title: "Matériel pro",
       desc: "Finitions haut de gamme",
-      img: "/images/frame_09.jpg",
+      img: "/images/frame_09.webp",
     },
   ] as VibeCard[],
 };
@@ -152,5 +152,5 @@ export const CONTACT = {
       href: BRAND.snapchat,
     },
   ],
-  mapImage: "/images/frame_03.jpg",
+  mapImage: "/images/frame_03.webp",
 };
