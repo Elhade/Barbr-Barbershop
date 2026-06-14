@@ -1,0 +1,7 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" rx="12" fill="#0a0a0a"/>
+  <text x="50%" y="50%" dy="0.04em" text-anchor="middle" dominant-baseline="central"
+        font-family="Anton, Impact, sans-serif" font-weight="700" font-size="40" fill="#ffffff">
+    B<tspan fill="#FF4B00">'</tspan>
+  </text>
+</svg>

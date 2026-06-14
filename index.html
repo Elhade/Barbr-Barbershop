@@ -9,6 +9,11 @@
       content="BARB'R Barbershop — 1A Rue Chateauredon, 13001 Marseille. Tu rentres, tu boudes, tu sors, t'es frais."
     />
     <meta name="theme-color" content="#0a0a0a" />
+    <link rel="canonical" href="https://barbr.ghost-service.fr/" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="BARB'R BARBERSHOP — Marseille 13" />
@@ -16,7 +21,46 @@
       property="og:description"
       content="Plus qu'une coupe, une expérience. 1A Rue Chateauredon, 13001 Marseille."
     />
-    <meta property="og:image" content="./images/frame_01.jpg" />
+    <meta property="og:url" content="https://barbr.ghost-service.fr/" />
+    <meta property="og:image" content="https://barbr.ghost-service.fr/images/frame_01.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Données structurées — référencement local (Google) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HairSalon",
+        "name": "BARB'R Barbershop",
+        "image": "https://barbr.ghost-service.fr/images/frame_01.jpg",
+        "url": "https://barbr.ghost-service.fr/",
+        "telephone": "+33749467869",
+        "priceRange": "€€",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "1A Rue Chateauredon",
+          "addressLocality": "Marseille",
+          "postalCode": "13001",
+          "addressCountry": "FR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 43.2946517,
+          "longitude": 5.3807238
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "10:00",
+            "closes": "20:00"
+          }
+        ],
+        "sameAs": [
+          "https://instagram.com/barbr._13",
+          "https://www.snapchat.com/add/rd._26"
+        ]
+      }
+    </script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
