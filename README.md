@@ -49,8 +49,32 @@ Secrets requis (repo → Settings → Secrets and variables → Actions) :
 | `FTP_USERNAME` | `admin-barbr@barbr.ghost-service.fr` (format complet) |
 | `FTP_PASSWORD` | mot de passe FTP |
 
+## Widgets à activer (avis Google + feed Instagram)
+
+Les sections **Avis** et **Instagram** affichent une version statique par défaut, et
+basculent automatiquement sur le widget live dès qu'un identifiant est renseigné dans
+[src/data/site.ts](src/data/site.ts) → `WIDGETS`.
+
+### Avis Google (Trustindex — gratuit)
+1. Crée un compte sur https://www.trustindex.io
+2. Connecte la fiche Google « BARB'R Barbershop » et génère un widget « Google Reviews »
+3. Copie l'URL du loader fournie (du type `https://cdn.trustindex.io/loader.js?xxxx`)
+4. Colle-la dans `WIDGETS.trustindexSrc`
+
+### Feed Instagram (SnapWidget — gratuit)
+1. Crée un compte sur https://snapwidget.com
+2. Connecte le compte `@barbr._13` et crée un widget (Grid ou Slider)
+3. Copie l'URL d'embed (du type `https://snapwidget.com/embed/1234567`)
+4. Colle-la dans `WIDGETS.snapwidgetSrc`
+
+> ⚠️ Les **stories** Instagram/Snapchat ne sont pas intégrables (éphémères, aucune API
+> publique). Le feed affiche les **publications** récentes, pas les stories.
+
+Après modification : `npm run build` puis push (ou redéploiement FTP).
+
 ## Infos salon
 
 - Adresse : `1A Rue Chateauredon, 13001 Marseille`
+- Téléphone : `07 49 46 78 69`
 - Réservation via Instagram : `https://instagram.com/barbr._13`
 - Horaires : Mardi – Samedi 10h–20h, Lundi & Dimanche sur RDV

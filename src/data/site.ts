@@ -4,6 +4,11 @@ import {
   Trophy,
   Footprints,
   Scissors,
+  Sparkles,
+  Crown,
+  Layers,
+  PenLine,
+  Baby,
   type LucideIcon,
 } from "lucide-react";
 import { InstagramIcon, SnapchatIcon } from "../components/icons/Brand";
@@ -38,8 +43,9 @@ export const BRAND = {
 
 export const NAV_LINKS = [
   { label: "L'Espace", href: "#about" },
+  { label: "Services", href: "#services" },
   { label: "Galerie", href: "#gallery" },
-  { label: "Le Vibe", href: "#vibe" },
+  { label: "Avis", href: "#avis" },
   { label: "Réserver", href: "#booking" },
   { label: "Contact", href: "#contact" },
 ];
@@ -153,4 +159,79 @@ export const CONTACT = {
     },
   ],
   mapImage: "/images/frame_03.webp",
+};
+
+export const SERVICES = {
+  eyebrow: "Prestations",
+  title: ["Ce qu'on", "fait"],
+  note: "Tarifs communiqués au salon — passe nous voir ou appelle, on te dit tout.",
+  items: [
+    {
+      icon: Scissors,
+      name: "Coupe",
+      desc: "Coupe sur-mesure, finitions nettes au détail.",
+    },
+    {
+      icon: Sparkles,
+      name: "Barbe",
+      desc: "Taille, contours et serviette chaude.",
+    },
+    {
+      icon: Crown,
+      name: "Coupe + Barbe",
+      desc: "Le combo complet, frais des deux côtés.",
+    },
+    {
+      icon: Layers,
+      name: "Dégradé / Fade",
+      desc: "Transitions propres, du skin au flou parfait.",
+    },
+    {
+      icon: PenLine,
+      name: "Contours & Tracé",
+      desc: "Lignes nettes et détails au rasoir.",
+    },
+    {
+      icon: Baby,
+      name: "Enfant",
+      desc: "Coupe pour les plus jeunes, dans le calme.",
+    },
+  ] as ServiceItem[],
+};
+
+export type ServiceItem = {
+  icon: LucideIcon;
+  name: string;
+  desc: string;
+};
+
+export const REVIEWS = {
+  eyebrow: "Avis",
+  title: ["Ils valident", "BARB'R"],
+  fallbackText:
+    "Note 5 étoiles sur Google. Rejoins les clients qui ressortent frais à chaque passage.",
+  cta: "Lire tous les avis Google",
+};
+
+export const INSTAFEED = {
+  eyebrow: "En ce moment",
+  title: ["Suis le", "mouvement"],
+  text: "Coupes, ambiance et nouveautés — tout passe sur Instagram.",
+  cta: "Voir sur Instagram",
+};
+
+/**
+ * Intégrations widgets tierces (gratuites).
+ * Renseigne ces valeurs pour activer l'affichage en direct ;
+ * sinon une version statique élégante s'affiche à la place.
+ */
+export const WIDGETS = {
+  // 1. Crée un compte gratuit sur https://www.trustindex.io, connecte ta fiche
+  //    Google, génère un widget puis colle ici l'URL du loader, ex :
+  //    "https://cdn.trustindex.io/loader.js?xxxxxxxxxxxxxxxxxxxx"
+  trustindexSrc: "",
+  // 2. Crée un compte gratuit sur https://snapwidget.com, connecte Instagram,
+  //    génère un widget puis colle ici l'URL d'embed, ex :
+  //    "https://snapwidget.com/embed/1234567"
+  snapwidgetSrc: "",
 };
